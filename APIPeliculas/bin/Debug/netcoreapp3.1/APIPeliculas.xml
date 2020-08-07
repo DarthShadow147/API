@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>APIPeliculas</name>
+    </assembly>
+    <members>
+        <member name="M:APIPeliculas.Controllers.CategoriasController.GetCategorias">
+            <summary>
+            Obtener todas las categorias
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:APIPeliculas.Controllers.CategoriasController.GetCategoria(System.Int32)">
+            <summary>
+            Obtener una categoria individual 
+            </summary>
+            <param name="categoriaId">Para entegrar un parametro al metodo se agrega la ruta</param>
+            <returns></returns>
+        </member>
+        <member name="M:APIPeliculas.Controllers.CategoriasController.CrearCategoria(APIPeliculas.Models.Dtos.CategoriaDTO)">
+            <summary>
+            Crear una nueva categoria
+            </summary>
+            <param name="categoriaDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIPeliculas.Controllers.CategoriasController.ActualizarCategoria(System.Int32,APIPeliculas.Models.Dtos.CategoriaDTO)">
+            <summary>
+            Actualizar una categoria existente
+            </summary>
+            <param name="categoriaId"></param>
+            <param name="categoriaDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIPeliculas.Controllers.CategoriasController.BorrarCategoria(System.Int32)">
+            <summary>
+            Borrar una categoria existente
+            </summary>
+            <param name="categoriaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:APIPeliculas.Controllers.PeliculasController.GetPelicula(System.Int32)">
+            Para entegrar un parametro al metodo se agrega la ruta
+        </member>
+        <member name="M:APIPeliculas.Controllers.UsuariosController.GetUsuario(System.Int32)">
+            Para entegrar un parametro al metodo se agrega la ruta
+        </member>
+        <member name="T:APIPeliculas.Data.ApplicationDbContext">
+            Clase donde se insertan los modelos a EF
+            Instalar EF Core, EF Core SQL, EF Core Tools
+        </member>
+        <member name="P:APIPeliculas.Data.ApplicationDbContext.Categoria">
+            Para inicial migracion de modelos a BD (codefirst) se usa el comando "add-migration + (nombre de la migracion)" 
+            Para aplicar la migracion a SQL se usa el comando "update-database"
+        </member>
+        <member name="T:APIPeliculas.Repository.CategoriaRepository">
+            Implementacion de la interfaz categoria
+        </member>
+        <member name="F:APIPeliculas.Repository.CategoriaRepository._bd">
+            Se llama a la cadena de conexion
+        </member>
+        <member name="T:APIPeliculas.Repository.IRepository.ICategoriaRepository">
+            Contiene metodos para la entidad o medelo categoria
+        </member>
+        <member name="T:APIPeliculas.Repository.IRepository.IPeliculaRepository">
+            Contiene metodos para la entidad o medelo categoria
+        </member>
+        <member name="T:APIPeliculas.Repository.IRepository.IUsuarioRepository">
+            Contiene metodos para la entidad o medelo categoria
+        </member>
+        <member name="T:APIPeliculas.Repository.PeliculaRepository">
+            Implementacion de la interfaz Pelicula
+        </member>
+        <member name="T:APIPeliculas.Repository.UsuarioRepository">
+            Implementacion de la interfaz categoria
+        </member>
+    </members>
+</doc>
